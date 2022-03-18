@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>proj 3 - responsive web design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <!-- for a responsive image modded by css -->
+            <!-- <img src="assets/desktop.png" class="img-banner" id="banner1" alt="">
+            <img src="assets/tablet.png" class="img-banner" id="banner2" alt="">
+            <img src="assets/mobile.png" class="img-banner" id="banner3" alt=""> -->
+
+            <!-- responsive image 
+            ref: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+            <picture>
+                <source media="(max-width: 480px)" type="image/webp" srcset="assets/mobile.webp" 
+                alt="titled smiling friends logo">
+                <source media="(max-width: 768px)" type="image/webp" srcset="assets/tablet.webp"
+                alt="picture of smiling friends themselves with logo titled beneath">
+                <img type="image/webp" src="assets/desktop.webp" alt="titled smiling friends with picture of them in between each word">
+            </picture>
+        </div>
+        <div class="box-wrapper flex">
+            <div class="group1 flex">
+                <div class="box1">
+                    <!-- <img src="assets/computer-guy-transparent.png" alt="guy sitting in chair covering computer screen with hands"> -->
+                    <img src="assets/pim-spin.gif" alt="pim spinning in place">
+                </div>
+                <div class="box2">
+                    <!-- <img src="assets/shrimpy-transparent.png" alt="photorealistic shrimpy wearing leather jacket"> -->
+                    <img src="assets/pim-spin.gif" alt="pim spinning in place">
+                </div>
+            </div>
+            <div class="group2 flex">
+                <div class="box3">
+                    <img src="assets/glep-spin-transparent.gif" alt="glep spinning in place">
+                </div>
+                <div class="box4">
+                    <img src="assets/glep-spin-transparent.gif" alt="glep spinning in place">
+                </div>
+            </div>
+        </div>
+        <div class="navbar flex">
+            <div class="left-nav flex">
+                <button class="nav-button" type="button">
+                    SMILE :)
+                </button>
+            </div>
+            <div class="right-nav flex">
+                <a href="https://www.adultswim.com/videos/smiling-friends">
+                    <img src="assets/adultswim.png" alt="adult swim logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
